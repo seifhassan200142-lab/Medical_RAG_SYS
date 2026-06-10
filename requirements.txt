@@ -1,0 +1,52 @@
+# Core API
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+
+# LLM
+groq==0.13.0
+
+# Vector Store
+qdrant-client==1.12.1
+
+# Embeddings
+langchain-huggingface==0.1.2
+langchain==0.3.13
+sentence-transformers==3.3.1
+FlagEmbedding==1.2.11
+
+# Reranking
+# FlagEmbedding provides BGEReranker
+# sentence-transformers provides CrossEncoder
+
+# PDF Multimodal Extraction
+PyMuPDF==1.24.14          # fitz — image + table extraction from PDFs
+tabulate==0.9.0            # table markdown formatting
+pandas==2.2.3              # table to_markdown / to_pandas
+
+# Medical Image Processing
+Pillow==11.0.0
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+pydicom==2.4.4             # DICOM support (optional)
+
+# OCR
+pytesseract==0.3.13
+# System dependency: sudo apt-get install tesseract-ocr
+
+# Document Loading
+langchain-community==0.3.13
+pypdf==5.1.0
+
+# NLP / Sparse Retrieval
+rank-bm25==0.2.2
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.10.3
+httpx==0.28.1
+aiofiles==24.1.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
